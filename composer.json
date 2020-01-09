@@ -1,0 +1,13 @@
+{
+    "name": "vendor/beep",
+    "autoload":{
+       "psr-4":{"App\\":"lib/App"},
+       "files":[
+           "lib/helper/helper.php"
+       ]
+    },
+    "require": {
+        "microsoft/azure-storage-blob": "^1.5",
+        "ralouphie/mimey": "^2.1"
+    }
+}
