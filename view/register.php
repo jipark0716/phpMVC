@@ -16,7 +16,6 @@
                          id="name"
                          type="text"
                          name="nick_name"
-                         required
                          autofocus="autofocus"
                          class="form-control">
                     </div>
@@ -27,7 +26,6 @@
                         <input id="email"
                          type="text"
                          name="login_id"
-                         required
                          class="form-control">
                      </div>
                 </div>
@@ -38,7 +36,6 @@
                          id="password"
                          type="password"
                          name="login_pw"
-                         
                          class="form-control">
                      </div>
                 </div>
@@ -49,7 +46,6 @@
                         id="password-confirm"
                         type="password"
                         name="login_pw_confirmation"
-                        required
                         class="form-control">
                     </div>
                 </div>

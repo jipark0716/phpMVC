@@ -3,11 +3,13 @@
     "autoload":{
        "psr-4":{"App\\":"lib/App"},
        "files":[
+           "lib/common.php",
            "lib/helper/helper.php"
        ]
     },
     "require": {
         "microsoft/azure-storage-blob": "^1.5",
-        "ralouphie/mimey": "^2.1"
+        "ralouphie/mimey": "^2.1",
+        "voku/session2db": "^4.0"
     }
 }
