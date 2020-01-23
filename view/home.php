@@ -3,7 +3,7 @@
         <span style="font-size:2.3rem">종목 선택</span>
       <?if(userLevel(20)){?>
         <button class="btn pull-right" id="add-quali">추가</button>
-        <div class="col-md-3 pull-right">
+        <div class="col-md-3 col-xs-5 pull-right">
             <input class="form-control" type="text" name="quali">
         </div>
       <?}?>

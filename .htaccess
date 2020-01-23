@@ -1,9 +1,16 @@
-php_flag opcache.enable Off
+php_flag opcache.enable on
 Options -MultiViews
 RewriteEngine On
 Options -Indexes
+
+RewriteCond %{REQUEST_URI} (ios$)
+RewriteRule ^ios$ ios.php [QSA,L]
+
+RewriteCond %{REQUEST_URI} (.ico$)
+RewriteRule ^(.*)$ https://pjistorage.blob.core.windows.net/qbank/assets/image/logo.png [QSA,L]
+
 RewriteCond %{REQUEST_URI} !(.js$)
 RewriteCond %{REQUEST_URI} !(.css$)
 RewriteCond %{REQUEST_URI} !(.ico$)
 RewriteCond %{REQUEST_URI} !(.php$)
-RewriteRule ^(.*)$ index.php?htaccess=$1 [QSA,L]
+RewriteRule ^(.*)$ index.php [QSA,L]

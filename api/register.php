@@ -9,7 +9,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
     case 'GET':
         $data['title'] = 'register';
         $data['content'] = viewCompile('register');
-        apiEnd($data);
+		apiEnd($data);
     case 'POST':
         $user = new App\Validation\Validation($_POST,['login_pw','login_id','nick_name','login_pw_confirmation']);
         $user->requiredCol(['login_pw','login_id','nick_name','login_pw_confirmation']);

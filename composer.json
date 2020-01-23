@@ -8,8 +8,6 @@
        ]
     },
     "require": {
-        "microsoft/azure-storage-blob": "^1.5",
-        "ralouphie/mimey": "^2.1",
         "voku/session2db": "^4.0"
     }
 }
